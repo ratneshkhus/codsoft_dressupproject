@@ -36,7 +36,11 @@ import userhis from './src/routes/Userhis.routes.js'
 dotenv.config();
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin :["https://dressup-one.vercel.app/"],
+    methods : ["GET","POST","PUT","DELETE"],
+    credentials : true
+}))
 
 conn();
 const __filename = fileURLToPath(import.meta.url);
