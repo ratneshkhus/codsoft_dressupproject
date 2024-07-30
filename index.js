@@ -37,8 +37,8 @@ dotenv.config();
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin :["https://dressup-one.vercel.app/"],
-    methods : ["GET","POST","PUT","DELETE"],
+    origin :"https://dressup-one.vercel.app",
+    methods :['get', 'post', 'put', 'delete'],
     credentials : true
 }))
 
