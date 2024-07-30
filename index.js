@@ -38,7 +38,7 @@ const app = express()
 app.use(express.json())
 app.use(cors({
     origin :"https://dressup-one.vercel.app",
-    methods :['get', 'post', 'put', 'delete'],
+    methods :['GET', 'POST', 'PUT', 'DELETE'],
     credentials : true
 }))
 
